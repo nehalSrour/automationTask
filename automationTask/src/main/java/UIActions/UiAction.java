@@ -62,13 +62,13 @@ public class UiAction {
 
     /**
      * @param byXpath
-     * @param waitype
+     * @param waitType
      * @return
      */
-    public UiAction ElementWait(By byXpath, int waitype) {
+    public UiAction ElementWait(By byXpath, int waitType) {
         try {
 
-            switch (waitype) {
+            switch (waitType) {
                 case WAIT_UNTIL_VISIBILITY:
                     wait.until(ExpectedConditions.visibilityOfElementLocated(byXpath));
                     break;
@@ -90,11 +90,20 @@ public class UiAction {
         return this;
     }
 
+    /**
+     * elementIsDisplayed
+     * @return
+     */
     public Boolean elementIsDisplayed() {
         return element.isDisplayed();
 
     }
 
+    /**
+     * goToUrl
+     * @param url
+     * @return
+     */
     public UiAction goToUrl(String url){
 
         getDriver().navigate().to(url);
@@ -109,13 +118,13 @@ public class UiAction {
     }
 
     /**
-     * @param byxpath
+     * @param byXpath
      * @return
      */
-    public UiAction FindElement(By byxpath) {
+    public UiAction FindElement(By byXpath) {
 
         try {
-            element = driver.findElement(byxpath);
+            element = driver.findElement(byXpath);
 
 
         } catch (InvalidSelectorException e) {
@@ -137,6 +146,7 @@ public class UiAction {
     }
 
     /**
+     * SendKeysToElement
      * @param keys
      * @return
      */

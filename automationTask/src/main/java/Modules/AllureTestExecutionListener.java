@@ -16,15 +16,10 @@ import java.io.ByteArrayInputStream;
 
 public class AllureTestExecutionListener implements ITestListener  {
 
-            UiAction element = new UiAction();
-
-
 
         @Override
         public void onTestStart(ITestResult result) {
             // TODO Auto-generated method stub
-
-
 
         }
         @Override
@@ -61,5 +56,3 @@ public class AllureTestExecutionListener implements ITestListener  {
         }
 
     }
-
-

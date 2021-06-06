@@ -19,7 +19,7 @@ public class homePage {
      * @return
      */
     public homePage goToGoogleHomePage(){
-        elementAction.goToUrl((PropertiesFileReader.propertiesFileReader(new String[]{"URL"},"configuration.properties"))[0]);
+        elementAction.goToUrl((PropertiesFileReader.propertiesFileReader(new String[]{"URL"},"src\\test\\resources\\configuration.properties"))[0]);
 
         return this;
     }

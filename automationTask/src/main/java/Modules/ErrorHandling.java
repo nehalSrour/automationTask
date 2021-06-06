@@ -41,7 +41,7 @@ public class ErrorHandling {
 	}
 
 	/**
-	 * Method Handling if timeout exceed more time to execute ex. waitforelement to be visible, clickable
+	 * Method Handling if timeout exceed more time to execute ex. wait for element to be visible, clickable
 	 *
 	 * @param e reference to get exception message , cause
 	 */

@@ -11,11 +11,11 @@ public class secondSearchResultPage {
 
     /**
      * in the second page find the first search result
-     * @param name
+     * @param searchKey
      * @return
      */
-    public String secondSearchResultText(String name){
-        secondSearchResult = By.xpath(String.format("(//div[@class='g']//a/h3[contains(text(),'%s')])[1]",name));
+    public String secondSearchResultText(String searchKey){
+        secondSearchResult = By.xpath(String.format("(//div[@class='g']//a/h3[contains(text(),'%s')])[1]",searchKey));
         return elementAction.FindElement(secondSearchResult).getElementText();
 
     }

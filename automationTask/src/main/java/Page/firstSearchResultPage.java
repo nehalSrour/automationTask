@@ -1,6 +1,5 @@
 package Page;
 
-import FileReader.PropertiesFileReader;
 import UIActions.UiAction;
 import org.openqa.selenium.By;
 
@@ -12,7 +11,7 @@ public class firstSearchResultPage {
     By nextButton = By.id("pnnext");
 
     /**
-     * in the first page find the first seach result
+     * in the first page find the first search result
      * @param name
      * @return
      */

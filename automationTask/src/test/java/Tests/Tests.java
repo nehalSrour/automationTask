@@ -28,7 +28,7 @@ public class Tests extends Base {
      * @return
      */
     @DataProvider(name = "Search")
-    public Object[][] getDataFromDataprovider() {
+    public Object[][] getDataFromDataProvider() {
 //        return ExcelReader.XslxReader("src\\test\\resources\\inputTestData.xlsx");
         return new Object[][]{{"Test automation", "automation", "Software Testing Leader - Free Continuous Testing Ebook", "Test Automation - Tutorialspoint"},
                 {"Manual Testing", "Manual", "Manual Testing - javatpoint", "QA Manual Testing Full Course for Beginners Part-1 - YouTube"}
